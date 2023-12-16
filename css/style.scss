@@ -1,0 +1,344 @@
+$spacing-unit: 40px;
+$small-spacing: 20px;
+$extra-small-spacing: 10px;
+$primary-color: #7b44ca;
+$secondary-color: #3227d0;
+$tertiary-color: #53cba0;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #303032;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr;
+  grid-gap: $spacing-unit;
+  padding: $spacing-unit 0;
+}
+
+.cards {
+  //start on column2 and span 12 columns
+  grid-column: 2 / span 12;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(auto, 60px));
+  grid-gap: $spacing-unit;
+}
+
+.card {
+  // span 4 columns
+  grid-column-end: span 4;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover {
+    transform: translateY(-8px);
+  }
+  &__image-container {
+    width: 100%;
+    height: 100%;
+    &-2 {
+      background: url('../images/bg-2.avif');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      @extend %card-shared;
+      &__icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        position: absolute;
+        top: 1.5rem;
+        left: 18rem;
+      }
+      &__label {
+        @extend %card-shared__label;
+        background-color: #187cf5;
+        color: white;
+        position: absolute;
+        left: 1.5rem;
+        top: 1.5rem;
+      }
+      &__title {
+        @extend %card-shared__title;
+        color: white;
+        font-size: 1.5rem;
+        position: absolute;
+        bottom: 6rem;
+        left: 1.5rem;
+      }
+      &__subtitle {
+        font-weight: lighter;
+        color: white;
+        font-size: 1rem;
+        position: absolute;
+        bottom: 4.5rem;
+        left: 1.5rem;
+        font-family: sans-serif;
+      }
+      &__link {
+        width: 8rem;
+        height: 2.7rem;
+        position: absolute;
+        bottom: 0.5rem;
+        left: 1.5rem;
+        color: white;
+        font-family: sans-serif;
+      }
+      &__banner {
+        background: linear-gradient(to left, #2d65b8, #7b44ca);
+        width: 100%;
+        height: 0.5rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-radius: 5px;
+      }
+    }
+    &-3 {
+      background: url('../images/bg-3.avif');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      @extend %card-shared;
+      &__icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        position: absolute;
+        top: 1.5rem;
+        left: 18rem;
+      }
+      &__label {
+        @extend %card-shared__label;
+        background-color: #187cf5;
+        color: white;
+        position: absolute;
+        left: 1.5rem;
+        top: 1.5rem;
+      }
+      &__title {
+        @extend %card-shared__title;
+        color: white;
+        font-size: 1.5rem;
+        position: absolute;
+        bottom: 6rem;
+        left: 1.5rem;
+      }
+      &__subtitle {
+        font-weight: lighter;
+        color: white;
+        font-size: 1rem;
+        position: absolute;
+        bottom: 4.5rem;
+        left: 1.5rem;
+        font-family: sans-serif;
+      }
+      &__link {
+        width: 8rem;
+        height: 2.7rem;
+        position: absolute;
+        bottom: 0.5rem;
+        left: 1.5rem;
+        color: white;
+        font-family: sans-serif;
+      }
+      &__banner {
+        background: linear-gradient(to left, #2d65b8, #7b44ca);
+        width: 100%;
+        height: 0.5rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-radius: 5px;
+      }
+    }
+    &-4 {
+      background: url('../images/bg-4.avif');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      @extend %card-shared;
+      &__icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        position: absolute;
+        top: 1.5rem;
+        left: 18rem;
+      }
+      &__label {
+        @extend %card-shared__label;
+        background-color: #187cf5;
+        color: white;
+        position: absolute;
+        left: 1.5rem;
+        top: 1.5rem;
+      }
+      &__title {
+        @extend %card-shared__title;
+        color: white;
+        font-size: 1.5rem;
+        position: absolute;
+        bottom: 6rem;
+        left: 1.5rem;
+      }
+      &__subtitle {
+        font-weight: lighter;
+        color: white;
+        font-size: 1rem;
+        position: absolute;
+        bottom: 4.5rem;
+        left: 1.5rem;
+        font-family: sans-serif;
+      }
+      &__link {
+        width: 8rem;
+        height: 2.7rem;
+        position: absolute;
+        bottom: 0.5rem;
+        left: 1.5rem;
+        color: white;
+        font-family: sans-serif;
+      }
+      &__banner {
+        background: linear-gradient(to left, #2d65b8, #7b44ca);
+        width: 100%;
+        height: 0.5rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-radius: 5px;
+      }
+    }
+    &-1 {
+      background: url('../images/bg-1.avif');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      @extend %card-shared;
+      &__icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        position: absolute;
+        top: 1.5rem;
+        left: 18rem;
+      }
+      &__label {
+        @extend %card-shared__label;
+        background-color: #187cf5;
+        color: white;
+        position: absolute;
+        left: 1.5rem;
+        top: 1.5rem;
+      }
+      &__title {
+        @extend %card-shared__title;
+        color: white;
+        font-size: 1.5rem;
+        position: absolute;
+        bottom: 6rem;
+        left: 1.5rem;
+      }
+      &__subtitle {
+        font-weight: lighter;
+        color: white;
+        font-size: 1rem;
+        position: absolute;
+        bottom: 4.5rem;
+        left: 1.5rem;
+        font-family: sans-serif;
+      }
+      &__link {
+        width: 8rem;
+        height: 2.7rem;
+        position: absolute;
+        bottom: 0.5rem;
+        left: 1.5rem;
+        color: white;
+        font-family: sans-serif;
+      }
+      &__banner {
+        background: linear-gradient(to left, #2d65b8, #7b44ca);
+        width: 100%;
+        height: 0.5rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .card {
+    grid-column-end: span 6;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    grid-gap: $small-spacing;
+    .card {
+      grid-column-end: span 12;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    grid-gap: $extra-small-spacing;
+    grid-template-columns: $extra-small-spacing repeat(6, 1fr) $extra-small-spacing;
+    .cards {
+      grid-column: 2 / span 6;
+      grid-template-columns: repeat(6, 1fr);
+      .card {
+        grid-column-end: span 6;
+      }
+    }
+  }
+}
+
+%card-shared {
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin: 10px 2px;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+%card-shared__label {
+  border-radius: 5px;
+  width: 4rem;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: smaller;
+  border: none;
+}
+%card-shared__title {
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+%card-shared__button {
+  width: 8rem;
+  height: 2.7rem;
+  background: linear-gradient(to left, $primary-color, $secondary-color);
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  z-index: 1;
+  color: white;
+}
+%card-shared__paragraph {
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  opacity: 0.6;
+}
