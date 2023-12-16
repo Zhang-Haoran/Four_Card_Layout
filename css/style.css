@@ -35,7 +35,7 @@ main {
   height: 100%;
 }
 .card__image-container-1 {
-  background: url("../images/bg-1.avif");
+  background: url("../images/bg-1.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -89,7 +89,7 @@ main {
   border-radius: 5px;
 }
 .card__image-container-2 {
-  background: url("../images/bg-2.avif");
+  background: url("../images/bg-2.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
