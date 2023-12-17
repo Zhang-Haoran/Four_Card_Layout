@@ -45,7 +45,7 @@ main {
   height: 1.5rem;
   position: absolute;
   top: 1.5rem;
-  left: 18rem;
+  right: 3rem;
 }
 .card__image-container-1__label {
   background-color: #187cf5;
@@ -99,7 +99,7 @@ main {
   height: 1.5rem;
   position: absolute;
   top: 1.5rem;
-  left: 18rem;
+  right: 3rem;
 }
 .card__image-container-2__label {
   background-color: #187cf5;
@@ -153,7 +153,7 @@ main {
   height: 1.5rem;
   position: absolute;
   top: 1.5rem;
-  left: 18rem;
+  right: 3rem;
 }
 .card__image-container-3__label {
   background-color: #187cf5;
@@ -207,7 +207,7 @@ main {
   height: 1.5rem;
   position: absolute;
   top: 1.5rem;
-  left: 18rem;
+  right: 3rem;
 }
 .card__image-container-4__label {
   background-color: #187cf5;
